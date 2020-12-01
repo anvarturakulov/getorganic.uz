@@ -10,9 +10,18 @@
     <title>getorganic.uz</title>
   </head>
   <body>
-    <header style="background-image: url(./assets/img/bg/bg-top-min.png);">
-      <div class="top__menu-box">
-        <div class="container">
+    
+    <div class="top__menu-podlojka"></div>
+
+    <div class="top__menu-box">
+      <div class="container">
+        
+        <div class="menu__box">
+          
+          <div class="logo__box">
+            <a href="#" class="logo">Get<span>Organic</span></a>
+          </div>
+
           <ul class="top__menu">
             <li><a href="#">Наш товар</a></li>
             <li><a href="#">Фотогаларея</a></li>
@@ -21,9 +30,20 @@
             <li><a href="#">Контакты</a></li>
             <li><a href="#">Блог</a></li>
           </ul> 
-        </div>
-      </div> 
 
+          <div class="top__menu-rigth">
+            <div class="menu__btn">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <img src="./assets/img/en-flag.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <header style="background-image: url(./assets/img/bg/bg-top-min.png);">
       <div class="container">
         <div class="header__inner">
           <div class="header__aside">
@@ -49,9 +69,9 @@
             </div>  
             <div class="price__box">
               <form>
-                <input type="text" class="price__box-input">
-                <input type="text">
-                <input type="text">
+                <input type="text" class="price__box-input" placeholder="Ваше имя">
+                <input type="text" placeholder="e-mail">
+                <input type="text" placeholder="тел. номер">
                 <button class="get__price">Получить прайс лист</button>
               </form>
             </div>
@@ -63,6 +83,7 @@
         </div>
       </div>
     </header>
+    <!-- 
     <div class="catalog">
       <div class="container">
         <div class="catalog__inner">
@@ -272,38 +293,49 @@
             <div class="order__bottom-catolog-box">
               <div class="catalog__bottom-item">
                 <div class="catalog__box-bottom">
-                  <div class="img__box"></div>
-                  <img class="catalog__bottom-image" src="./assets/img/catalog/mini/suxofruct.png"></img>
+                  <div class="img__box">
+                    <img class="catalog__bottom-image" src="./assets/img/catalog/mini/suxofruct.png"></img>
+                  </div>
                   <a href="#" class="catalog__bottom-title">Сухофрукты</a>
                 </div>
               </div>              
               <div class="catalog__bottom-item">
                 <div class="catalog__box-bottom">
                   <img class="catalog__bottom-image" src="./assets/img/catalog/mini/fructi.png"></img>
-                  <a href="#" class="catalog__bottom-title">Фрукты</a>
+                  <div class="img__box">
+                    <a href="#" class="catalog__bottom-title">Фрукты</a>
+                  </div>
                 </div>
               </div>              
               <div class="catalog__bottom-item">
                 <div class="catalog__box-bottom">
-                  <img class="catalog__bottom-image" src="./assets/img/catalog/mini/orexi.png"></img>
+                  <div class="img__box">
+                    <img class="catalog__bottom-image" src="./assets/img/catalog/mini/orexi.png"></img>
+                  </div>
                   <a href="#" class="catalog__bottom-title">Орехи</a>
                 </div>
               </div>              
               <div class="catalog__bottom-item">
                 <div class="catalog__box-bottom">
-                  <img class="catalog__bottom-image" src="./assets/img/catalog/mini/ovoshi.png"></img>
+                  <div class="img__box">
+                    <img class="catalog__bottom-image" src="./assets/img/catalog/mini/ovoshi.png"></img>
+                  </div>
                   <a href="#" class="catalog__bottom-title">Овощи</a>
                 </div>
               </div>              
               <div class="catalog__bottom-item">
                 <div class="catalog__box-bottom">
-                  <img class="catalog__bottom-image" src="./assets/img/catalog/mini/boboviye.png"></img>
+                  <div class="img__box">
+                    <img class="catalog__bottom-image" src="./assets/img/catalog/mini/boboviye.png"></img>
+                  </div>
                   <a href="#" class="catalog__bottom-title">Бобовые</a>
                 </div>
               </div>              
               <div class="catalog__bottom-item">
                 <div class="catalog__box-bottom">
-                  <img class="catalog__bottom-image" src="./assets/img/catalog/mini/baxcha.png"></img>
+                  <div class="img__box">
+                    <img class="catalog__bottom-image" src="./assets/img/catalog/mini/baxcha.png"></img>
+                  </div>
                   <a href="#" class="catalog__bottom-title">Бахча</a>
                 </div>
               </div>              
@@ -316,25 +348,29 @@
     <div class="contacts">
       <div class="container">
         <div class="contacts__inner">
-          <div class="adress__box">
-            <div class="adress__title">Наш адрес</div>
-            <div class="contacts__text">г. Ташкент ул. Мукуми 10</div>
-            <div class="contacts__info">Здесь можете забрать товар самовывозом или ознакомиться образцами товаров</div>
-          </div>
+          <div class="contacts__box">
 
-          <div class="phone__box">
-            <div class="phone__numbers">
-              <a href="" class="number">(998)71 200-02-24</a>
-              <a href="" class="number">(998)94 602-00-04</a>
+            <div class="adress__box">
+              <div class="adress__title">Наш адрес</div>
+              <div class="contacts__text">г. Ташкент ул. Мукуми 10</div>
+              <div class="contacts__info">Здесь можете забрать товар самовывозом или ознакомиться образцами товаров</div>
             </div>
-            <div class="phone-btn">Заказать звонок</div>
-          </div>  
+  
+            <div class="phone__box">
+              <div class="phone__numbers">
+                <a href="" class="number">(998)71 200-02-24</a>
+                <a href="" class="number">(998)94 602-00-04</a>
+              </div>
+              <div class="phone-btn">Заказать звонок</div>
+            </div>  
+          </div>
         </div>
       </div>
     </div>
 
     <div class="map">
-      <img src="./assets/img/other/map.jpg" alt="">
-    </div>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae878b26e82944283d6706675eca0bf670f5962611084b93750b84522ddb793f2&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+    </div> -->
+
   </body>
 </html>

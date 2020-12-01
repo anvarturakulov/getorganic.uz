@@ -1,6 +1,5 @@
 @import 'utils/global';
 @import 'utils/libs';
-@import 'utils/media';
 @import 'utils/reset';
 @import 'utils/vars';
 
@@ -13,10 +12,24 @@ header{
   margin-bottom: 200px;
 }
 
-.top__menu-box{
+
+.top__menu-podlojka{
+  background-color: #c9a973;
   height: 60px;
+  width: 100%;
+}
+
+.top__menu-box{
+  min-height: 60px;
   background-color: #32302e;
   opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 120;
+  overflow: hidden;
+  transform:transition(all .5s ease);
+  
 }
 
 .top__menu{
@@ -44,6 +57,15 @@ header{
   font-weight: 700;
   span{
     color : #161312;
+  }
+}
+
+.logo{
+  font-size: 30px;
+  color : #ee5a09;
+  font-weight: 700;
+  span{
+    color : #fff;
   }
 }
 
@@ -147,6 +169,7 @@ header{
   position: relative;
   margin-top: 28px;
   background-color: rgba($color: #2d2c2c, $alpha: 0.15);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 1, 0.35);
   form {
     padding: 26px 18px 10px 26px;
     //background-color: transparent;
@@ -155,6 +178,7 @@ header{
       width: 100%;
       margin-bottom: 15px;
       height: 47px;
+      padding: 0px 10px;
     }
     button {
       height: 47px;
@@ -352,7 +376,8 @@ header{
 .order__form-title{
   font-size: 35px;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+
 }
 
 .order__form-box{
@@ -433,6 +458,7 @@ header{
 .price__box-bottom{
   width: 340px;
   height: 290px;
+  
 }
 
 .order__bottom-catolog-box{
@@ -471,3 +497,91 @@ header{
   margin-right: 20px;
   width: 250px;
 }
+
+.img__box{
+  width: 50px;
+}
+
+.contacts__box{
+  position: absolute;
+  height: 225px;
+  background : #ea7636;
+  width: 100%;
+  top: -100px;
+  display: flex;
+  padding: 28px 44px;
+  .phone__box{
+    .phone__numbers{
+      .number {
+        color : #fff;
+        margin-bottom: 20px;
+        line-height: 1.4;
+      }
+    }
+    .phone-btn{
+      background-color: #67af14;
+      color : #fff;
+      box-shadow: 0px 2px 5px 0px rgba(255, 255, 255, 0.5);     
+    }
+  }
+}
+
+.contacts__inner{
+  position: relative;
+}
+
+.adress__title{
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contacts__text{
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 23px;
+  color: #fff;
+}
+
+.contacts__info{
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.menu__box{
+  display: flex;
+  align-items: center;
+  img{
+    width: 50px;
+    height: 26px;
+    cursor: pointer;
+  }
+}
+
+button{
+  cursor: pointer;
+}
+
+a{
+  cursor: pointer;
+}
+
+.logo__box{
+  display: none;
+}
+
+.menu__btn{
+  display: none;
+  margin-right: 20px;
+}
+
+.top__menu-rigth{
+  display: flex;
+  align-items: center;
+}
+
+
+@import 'utils/media';
