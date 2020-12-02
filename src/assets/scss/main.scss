@@ -27,8 +27,8 @@ header{
   width: 100%;
   top: 0;
   z-index: 120;
-  overflow: hidden;
-  transform:transition(all .5s ease);
+  // overflow: hidden;
+  // transform:transition(all .5s ease);
   
 }
 
@@ -610,5 +610,31 @@ a{
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 1, 0.35);
 }
 
+option.imagebacked {
+  padding: 2px 0 2px 20px;
+  background-repeat: no-repeat;
+  background-position: 1px 2px;
+  vertical-align: middle;
+}
+
+.flag__box{
+  display: none;
+  position: absolute;
+  z-index: 5000;
+  a{
+    //margin-bottom: 1px;
+    border: 1px solid #fff;
+  }
+  .flag__box-inner{
+    display: flex;
+    width: 160px;
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
+
+.img__boxbox{
+  margin-right: 15px;
+}
 
 @import 'utils/media';

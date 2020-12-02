@@ -23,11 +23,11 @@
           </div>
 
           <ul class="top__menu">
-            <li><a href="#">Наш товар</a></li>
-            <li><a href="#">Фотогаларея</a></li>
-            <li><a href="#">Как сделать заказ</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#catalog">Наш товар</a></li>
+            <li><a href="#about">Фотогаларея</a></li>
+            <li><a href="#order">Как сделать заказ</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts__box">Контакты</a></li>
             <li><a href="#">Блог</a></li>
           </ul> 
 
@@ -37,7 +37,10 @@
               <div></div>
               <div></div>
             </div>
-            <img src="./assets/img/en-flag.jpg" alt="">
+            <div class="img__boxbox">
+              <img src="./assets/img/lang/ru.jpg" class = "flag" alt="">
+            </div>
+            
           </div>
         </div>
       </div>
@@ -84,7 +87,7 @@
       </div>
     </header>
      
-    <div class="catalog">
+    <div class="catalog" id ="catalog">
       <div class="container">
         <div class="catalog__inner">
           <div class="catalog__item">
@@ -188,7 +191,7 @@
       </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
       <div class="container">
         <div class="about__inner">
           <div class="galary">
@@ -237,7 +240,7 @@
     </div>
 
     
-    <div class="order" style="background-image: url(./assets/img/bg/bg-midle-2.jpg);">
+    <div class="order" id="order" style="background-image: url(./assets/img/bg/bg-midle-2.jpg);">
       <div class="container">
         <div class="order__inner">
           <div class="order__content">
@@ -268,8 +271,8 @@
         </div>
       </div>
     </div>
-
-    <div class="reviews">
+    
+    <div class="reviews" id="reviews">
       <div class="container">
         <div class="reviews__title">ОТЗЫВЫ НАШИХ КЛИЕНТОВ И СЕРТИФИКАТЫ</div>
         <div class="reviews__inner">
@@ -375,7 +378,7 @@
     <div class="contacts">
       <div class="container">
         <div class="contacts__inner">
-          <div class="contacts__box">
+          <div class="contacts__box" id="contacts__box">
             <div class="adress__box">
               <div class="adress__title">Наш адрес</div>
               <div class="contacts__text">г. Ташкент ул. Мукуми 10</div>
@@ -397,5 +400,16 @@
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae878b26e82944283d6706675eca0bf670f5962611084b93750b84522ddb793f2&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
     </div>
 
+    <div class="flag__box">
+      <div class="flag__box-inner">
+        <a href="http://en.getorganic.uz" class="flag__item"> <img src="./assets/img/lang/en.jpg" alt=""></a>
+        <a href="http://it.getorganic.uz" class="flag__item"> <img src="./assets/img/lang/it.jpg" alt=""></a>
+        <a href="http://de.getorganic.uz" class="flag__item"> <img src="./assets/img/lang/ge.jpg" alt=""></a>
+        <a href="http://fr.getorganic.uz" class="flag__item"> <img src="./assets/img/lang/fr.jpg" alt=""></a>
+        <a href="http://es.getorganic.uz" class="flag__item"> <img src="./assets/img/lang/es.jpg" alt=""></a>
+        <a href="http://cn.getorganic.uz" class="flag__item"> <img src="./assets/img/lang/cn.jpg" alt=""></a>
+      </div>
+    </div>
+    
   </body>
 </html>
